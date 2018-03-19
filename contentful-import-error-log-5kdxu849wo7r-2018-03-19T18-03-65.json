@@ -1,0 +1,14 @@
+[
+  {
+    "ts": "2018-03-19T18:03:34.857Z",
+    "level": "error",
+    "error": {
+      "stacktrace": [
+        "Error: \n      Please make sure the destination space have the same default locale as the source\n\n      Default locale for source space : en-US\n\n      Default locale for destination space: en-GB\n\n    ",
+        "assertDefaultLocale (/Users/nicklewis/proj/gatsby-starter-gcn/node_modules/contentful-import/dist/utils/validations.js:66:11)",
+        "/Users/nicklewis/proj/gatsby-starter-gcn/node_modules/contentful-import/dist/index.js:121:46",
+        "<anonymous>"
+      ]
+    }
+  }
+]

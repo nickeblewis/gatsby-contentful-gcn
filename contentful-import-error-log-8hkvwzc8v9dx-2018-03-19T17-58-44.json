@@ -1,0 +1,133 @@
+[
+  {
+    "ts": "2018-03-19T17:58:10.778Z",
+    "level": "error",
+    "error": {
+      "name": "AccessDenied",
+      "entity": {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "8hkvwzc8v9dx"
+            }
+          },
+          "id": "tag",
+          "type": "ContentType",
+          "createdAt": "2018-03-19T17:58:06.442Z",
+          "updatedAt": "2018-03-19T17:58:06.442Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "0eQtvKmJMbemXJlIHHk0kY"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "0eQtvKmJMbemXJlIHHk0kY"
+            }
+          },
+          "version": 1
+        },
+        "displayField": "title",
+        "name": "Tag",
+        "description": "",
+        "fields": [
+          {
+            "id": "title",
+            "name": "Title",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+              {
+                "unique": true
+              }
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "slug",
+            "name": "Slug",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+              {
+                "unique": true
+              }
+            ],
+            "disabled": false,
+            "omitted": false
+          }
+        ]
+      },
+      "data": {
+        "status": 403,
+        "statusText": "Forbidden",
+        "message": "Forbidden",
+        "details": {
+          "reasons": [
+            "You do not have permissions to create on EditorInterface, please contact your administrator for more information."
+          ]
+        },
+        "request": {
+          "url": "https://api.contentful.com:443/spaces/8hkvwzc8v9dx/content_types/tag/published",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.import/6.2.2; sdk contentful-management.js/4.2.2; platform node.js/v9.5.0; os macOS/17.4.0;",
+            "Authorization": "Bearer ...c57b8",
+            "user-agent": "node.js/v9.5.0",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Version": 1
+          },
+          "method": "put",
+          "payloadData": null
+        },
+        "requestId": "ff4ffeec1aac49a7ad21de361c22a966"
+      }
+    }
+  },
+  {
+    "ts": "2018-03-19T17:58:12.262Z",
+    "level": "error",
+    "error": {
+      "name": "VersionMismatch",
+      "entity": {
+      },
+      "data": {
+        "status": 409,
+        "statusText": "Conflict",
+        "message": "",
+        "details": {
+        },
+        "request": {
+          "url": "https://api.contentful.com:443/spaces/8hkvwzc8v9dx/content_types/tag/published",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.import/6.2.2; sdk contentful-management.js/4.2.2; platform node.js/v9.5.0; os macOS/17.4.0;",
+            "Authorization": "Bearer ...c57b8",
+            "user-agent": "node.js/v9.5.0",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Version": 1
+          },
+          "method": "put",
+          "payloadData": null
+        },
+        "requestId": "c08861f0c634aced706fc2b7f48dc5cc"
+      }
+    }
+  },
+  {
+    "ts": "2018-03-19T17:58:12.263Z",
+    "level": "error",
+    "error": "Could not publish the following entities: Tag (tag)"
+  }
+]
