@@ -14,7 +14,7 @@ const Index = ({data}) =>  {
   return (
     <Container>
       <PageTitle small>
-        <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a>, <a href="https://www.contentful.com/" target="_blank">Contentful</a> and <a href="https://www.netlify.com/" target="_blank">Netlify</a> <span>🎉</span>
+        Nick Lewis - Web Developer, Photographer, Blogger
       </PageTitle>
       <CardList>
         {posts.map(({ node: post })=> (
